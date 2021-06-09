@@ -14,7 +14,10 @@ mongoos.connect(process.env.URI, { useUnifiedTopology: true, useNewUrlParser: tr
 
 app.use('/post',require('./routes/post'))
 app.use('/register',require('./routes/register'))
+app.use('/registeremployer',require('./routes/registerEmployer'))
 app.use('/login'   ,require('./routes/login'))
+app.use('/loginemp'   ,require('./routes/loginemp'))
+
 
 
 //app.use(express.json())
