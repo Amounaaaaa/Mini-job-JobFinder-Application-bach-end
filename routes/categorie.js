@@ -30,10 +30,10 @@ router.get('/',(req,res)=>{
 
         })
 })
-//** Get user posts****//
-router.get('/myPosts',authMiddleware,(req,res)=>{
-    Post.find({owner:req.userId})
-        .populate('owner')
+//** Get categorie by id ****//
+router.get('/categorie/:id',(req,res)=>{
+    Categorie.find({_id:req.params})
+
         .then((posts)=>res.status(200).json(posts) )
 
         // .send(posts))

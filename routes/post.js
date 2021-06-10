@@ -58,6 +58,8 @@ router.get('/all',(req,res)=>{
 
 
 
+
+
 //** Get user posts****//
 router.get('/myPosts',authMiddleware,(req,res)=>{
     Post.find({owner:req.userId})
