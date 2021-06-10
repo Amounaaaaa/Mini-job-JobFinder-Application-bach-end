@@ -17,6 +17,8 @@ app.use('/register',require('./routes/register'))
 app.use('/registeremployer',require('./routes/registerEmployer'))
 app.use('/login'   ,require('./routes/login'))
 app.use('/loginemp'   ,require('./routes/loginemp'))
+app.use('/categorie'   ,require('./routes/categorie'))
+
 
 
 

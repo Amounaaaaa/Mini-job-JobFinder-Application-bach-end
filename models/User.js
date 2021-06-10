@@ -5,5 +5,9 @@ const UserSchema=mongoose.Schema({
     phone:Number,
     email:String,
     password:String,
+    datebirth: {
+        "type": "date",
+    }   ,
+   // governorate:String
 })
 module.exports=mongoose.model("user-auth",UserSchema)
