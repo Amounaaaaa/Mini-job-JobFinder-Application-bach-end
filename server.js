@@ -8,7 +8,6 @@ mongoos.connect(process.env.URI, { useUnifiedTopology: true, useNewUrlParser: tr
     (err) => {
         if (err){ throw err;}
 
-
             console.log('connect to db...')
     })
 

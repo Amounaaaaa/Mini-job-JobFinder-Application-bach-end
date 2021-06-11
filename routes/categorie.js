@@ -34,17 +34,13 @@ router.get('/',(req,res)=>{
 router.get('/categorie/:id',(req,res)=>{
     Categorie.find({_id:req.params})
 
-        .then((posts)=>res.status(200).json(posts) )
-
+        .then((categorie)=>res.status(200).json(categorie))
         // .send(posts))
         .catch((err)=>{
             // console.error(err.message)
             console.log("Error !!!!!!!!!!!!!!!!!!!!!!!!!")
-            res.status(500).send({errors:[{msg:"Server Error"}]})
-
+            res.status(404).send({errors:[{msg:"Server Error"}]})
         })
 })
-
-
 
 module.exports=router
